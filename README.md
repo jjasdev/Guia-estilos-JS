@@ -72,3 +72,32 @@ guia-estilos
 –	Para validar el código usaremos la herramienta **JSHint**.
 –	Las variables se declararán con  `const` o `let`. Se hará uso de `const` por defecto, a menos que la variable vaya a ser reasignada. La palabra clave  var  no debe usarse.
 –	Con ES6, el lenguaje tiene ahora tres tipos diferentes de iteración `for`. Pueden usarse todas, aunque el tipo `for-of` debe ser el preferente cuando sea posible.
+
+## Sintaxis
+
+–	Cada sentencia debe terminar con un punto y coma.
+–	Debido a la simplicidad del código, para este proyecto no se usarán los módulos ES6.
+–	El alineamiento horizontal está desaconsejado. (*La alineación horizontal es la práctica de usar un número variable de espacios adicionales en el código, para que ciertos elementos aparezcan justo debajo de otros elementos de las líneas anteriores*).
+–	Se priorizan las funciones flecha sobre la palabra clave `function`, especialmente en funciones anidadas.
+–	Evitar el uso de funciones anónimas.
+–	Se usarán plantillas de strings (delimitadas por `) en lugar de concatenaciones complejas de strings, especialmente si están involucrados varios literales. 
+–	Cada declaración de variable local declara una sola variable. Se asignarán las variables en una nueva línea, no separadas por comas.
+–	Se priorizará el uso de comillas simples, en lugar de comillas dobles.
+–	Uso de la sintaxis literal para la creación de objetos y arreglos:
+```javascript
+ const objeto = {}; 
+ const arreglo = []; 
+ ```
+–	Cuando se acceda a las propiedades se usará la notación de punto. 
+–	Se usará === y !== en vez de == y != respectivamente.
+–	Se usarán llaves en todos los bloques de múltiples líneas.
+–	En los comentarios de múltiples líneas se usará /** ... */. 
+–	En los comentarios de una sola línea se usará //.
+–	1 tabulación para la identación.
+–	1 espacio antes de la llave de apertura.
+–	1 espacio antes del paréntesis de apertura en las sentencias de control (`if, while…`).
+–	0 espacios antes de la lista de argumentos en las invocaciones y declaraciones de funciones.
+–	Se separarán los operadores con espacios.
+–	1 línea en blanco al final del archivo.
+–	1 línea en blanco luego de los bloques y antes de la siguiente sentencia.
+
