@@ -45,7 +45,7 @@ guia-estilos
 |     |- images/			
 |     |  |- background-header.jpg
 |     |
-|     |- js/				/
+|     |- js/			
 |     |  |- main.js
 |     |  |- imagemin.js
 |     |  
@@ -60,3 +60,15 @@ guia-estilos
 -	`js`  Contiene los scripts implementados para agregar funcionalidad interactiva. 
 -	`src`  Este directorio contiene el código fuente en bruto. Los documentos alojados en ella son las fuentes puras usadas en el modo de **desarrollo**.
 -	`scss`  Este directorio contiene el código fuente de todos los estilos de aplicación agrupados en *partials*, para que posteriormente sean mapeados y procesados a una única hoja de estilo interpretada por los navegadores.
+
+## Reglas generales
+
+–	El estilo de escritura para funciones, objetos e instancias es **Camel Case** (*Ejemplo: `let sumaNumeros = …`*).
+–	El estilo de escritura para constructores o clases es Pascal Case (*Ejemplo: `class User`*). 
+–	Todos los nombres comienzan con una letra. Evita nombres de una sola letra. Se debe ser descriptivo con los nombres.
+–	Los nombres de las constantes serán en mayúsculas y separadas por un guión bajo (*Ejemplo:  `CONSTANT_CASE`* ).
+–	Se hará siempre uso del modo estricto  `"use strict"`; .
+–	El código Javascript de la aplicación viene documentado con la herramienta **JSDoc**.
+–	Para validar el código usaremos la herramienta **JSHint**.
+–	Las variables se declararán con  `const` o `let`. Se hará uso de `const` por defecto, a menos que la variable vaya a ser reasignada. La palabra clave  var  no debe usarse.
+–	Con ES6, el lenguaje tiene ahora tres tipos diferentes de iteración `for`. Pueden usarse todas, aunque el tipo `for-of` debe ser el preferente cuando sea posible.
